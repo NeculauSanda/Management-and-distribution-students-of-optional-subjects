@@ -19,14 +19,11 @@ public class Main {
                     try {
                         secretariat.adaugaStudent(intrari[1], intrari[2]);
                     } catch (StudentDuplicat e) {
-                        int first = 0;
+                        // afisam mesajul
                         try (FileWriter fw = new FileWriter("src/main/resources/" + args[0] + "/" + args[0] + ".out", true);
                              BufferedWriter bw = new BufferedWriter(fw);
                              PrintWriter out = new PrintWriter(bw)) {
-                            if (first == 0) {
-                                out.println("***");
-                                first = 1;
-                            }
+                            out.println("***");
                             out.println(e.getMessage());
                         }catch (IOException b) {
                             b.printStackTrace();
@@ -36,7 +33,7 @@ public class Main {
                 } else if (intrari[0].equals("citeste_mediile")) {
                     int nr = 1;
                     while (true) {
-                        // deschidem fisierele cu note pana cand nu mai exista fisier pe care sa-l deschida
+                        // deschidem fisierele cu note pana cand nu mai exista niciun fisier pe care sa-l deschida
                         try (BufferedReader br2 = new BufferedReader(new FileReader("src/main/resources/" + args[0] + "/" + "note_" + nr + ".txt"))) {
                             String linetwo;
                             while ((linetwo = br2.readLine()) != null) {
@@ -53,6 +50,7 @@ public class Main {
                 }else if (intrari[0].equals("contestatie")) {
                     secretariat.contestatii(intrari);
                 }else if (intrari[0].equals("adauga_curs")) {
+                    // adaugam cursul in functie de tipul acestuia
                     if(intrari[1].equals("licenta")) {
                         secretariat.adaugaCurs(intrari[2], Integer.parseInt(intrari[3]), StudentLicenta.class);
                     } else {
@@ -68,7 +66,6 @@ public class Main {
                     secretariat.posteazaStudent(intrari[1], args[0]);
                 }
             }
-
         } catch(IOException e){
             e.printStackTrace();
         }

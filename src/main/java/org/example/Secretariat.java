@@ -18,6 +18,7 @@ public class Secretariat {
             throw new StudentDuplicat("Student duplicat: " + numeStudent);
         }
 
+        // generam studentul
         if(tipStudiu.equals("master")) {
             student = new StudentMaster(numeStudent);
         } else if(tipStudiu.equals("licenta")) {
@@ -36,6 +37,7 @@ public class Secretariat {
         return false;
     }
 
+    // asaugam curs
     public <E extends Student> void adaugaCurs(String nume, int capacitate, Class<E> tipCurs) {
         Curs<E> curs = new Curs<>(nume, capacitate);
         cursuriOptionale.add(curs);
@@ -53,12 +55,12 @@ public class Secretariat {
 
     //se adauga preferintele de curs optional in listele studentilor
     public  void adaugaPreferinte(String[] date) {
-        //preferintele studentului
+        //extragem preferintele studentului
         String[] cursuri = extragereCursuri(date);
         for (Student studenti : studentiFacultate) {
             // daca s-a gasit studentul in baza de date
             if (studenti.getNume().equals(date[1])) {
-                // pentru fiecare curs din preferinte se cauta in lista cu cursuri si adauga la preferintele studentului
+                // pentru fiecare curs preferat se cauta existenta lui in lista cu cursuri si se adauga la preferintele studentului
                 for (String numeCurs : cursuri) {
                     for (Curs<?> curs : cursuriOptionale) {
                         if (curs.getNumeCurs().equals(numeCurs)) {
@@ -82,10 +84,8 @@ public class Secretariat {
                     break;
                 } else {
                     int index = cursuristud.getStudentiParticipanti().size();
-                    Student lastStudent = (Student) cursuristud.getStudentiParticipanti().get(index - 1);
-                    System.out.println("------------------------------->" + lastStudent.getMedie() + " student ce trebuie bagat " + student.getMedie());
+                    Student lastStudent = (Student) cursuristud.getStudentiParticipanti().get(index - 1); //ultimul student de optionalul acela
                     if(student.getMedie() == lastStudent.getMedie()) {
-                        System.out.println(" a intrata \n");
                         cursuristud.adaugaStudent(student, 0);
                         break;
                     }
@@ -133,7 +133,6 @@ public class Secretariat {
                     }
 
                     String tipstudent = null;
-                    String numeoptional;
                     if(student instanceof StudentLicenta) {
                         tipstudent = "Licenta";
                     } else if(student instanceof StudentMaster) {
@@ -194,14 +193,13 @@ public class Secretariat {
     }
 
     public void afiseazaMedii(String args) {
-//      //sortare
+        //sortare
         sortareAfisare();
         int first = 0;
         for (Student student : studentiFacultate) {
             boolean tip = student instanceof StudentLicenta;
             boolean tip2 = student instanceof StudentMaster;
-            System.out.println(student.getNume() + " licenta: " + tip + ", master: " + tip2 + "  ____  " + student.getMedie());
-            try (FileWriter fw = new FileWriter("src/main/resources/" + args + "/" + args + ".out", true);
+             try (FileWriter fw = new FileWriter("src/main/resources/" + args + "/" + args + ".out", true);
                  BufferedWriter bw = new BufferedWriter(fw);
                  PrintWriter out = new PrintWriter(bw)) {
 
