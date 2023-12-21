@@ -62,7 +62,6 @@ public class Main {
                     secretariat.adaugaPreferinte(intrari);
                 } else if (intrari[0].equals("repartizeaza")) {
                     secretariat.repartizeaza();
-                    secretariat.afiseazaStudCurs();
                 } else if (intrari[0].equals("posteaza_curs")) {
                     secretariat.posteazaCurs(intrari[1], args[0]);
                 } else if (intrari[0].equals("posteaza_student")) {
