@@ -1,6 +1,328 @@
-Student duplicat: Carter
-Student duplicat: Fiona
-Student duplicat: Karen
-Student duplicat: Larry
-Student duplicat: Alina
-Student duplicat: Razvan
+.Liam licenta: true, master: false  ____  9.4
+/Bella licenta: true, master: false  ____  9.2
+/Grace licenta: false, master: true  ____  9.1
+0Jayden licenta: true, master: false  ____  9.1
+-Mia licenta: false, master: true  ____  9.1
+/Daisy licenta: true, master: false  ____  9.0
+0Harper licenta: true, master: false  ____  8.9
+/Fiona licenta: true, master: false  ____  8.8
+.Jack licenta: false, master: true  ____  8.8
+.Isla licenta: true, master: false  ____  8.6
+0Isabel licenta: false, master: true  ____  8.5
+/Larry licenta: false, master: true  ____  8.5
+.Noah licenta: false, master: true  ____  8.5
+/Gavin licenta: true, master: false  ____  8.4
+1Kennedy licenta: true, master: false  ____  8.2
+0Elijah licenta: true, master: false  ____  7.3
+/Aiden licenta: true, master: false  ____  6.5
+/Henry licenta: false, master: true  ____  6.5
+0Carter licenta: true, master: false  ____  5.5
+/Karen licenta: false, master: true  ____  5.0
+.Liam licenta: true, master: false  ____  9.4
+0Elijah licenta: true, master: false  ____  9.3
+/Bella licenta: true, master: false  ____  9.2
+/Grace licenta: false, master: true  ____  9.1
+0Jayden licenta: true, master: false  ____  9.1
+-Mia licenta: false, master: true  ____  9.1
+/Daisy licenta: true, master: false  ____  9.0
+0Harper licenta: true, master: false  ____  8.9
+/Fiona licenta: true, master: false  ____  8.8
+.Jack licenta: false, master: true  ____  8.8
+/Aiden licenta: true, master: false  ____  8.7
+0Carter licenta: true, master: false  ____  8.6
+.Isla licenta: true, master: false  ____  8.6
+/Henry licenta: false, master: true  ____  8.5
+0Isabel licenta: false, master: true  ____  8.5
+/Karen licenta: false, master: true  ____  8.5
+/Larry licenta: false, master: true  ____  8.5
+.Noah licenta: false, master: true  ____  8.5
+/Gavin licenta: true, master: false  ____  8.4
+1Kennedy licenta: true, master: false  ____  8.2
+B------------------------------->9.1 student ce trebuie bagat 9.0
+B------------------------------->9.1 student ce trebuie bagat 8.7
+B------------------------------->8.6 student ce trebuie bagat 8.6
+ a intrata 
+
+B------------------------------->8.8 student ce trebuie bagat 8.5
+B------------------------------->8.5 student ce trebuie bagat 8.5
+ a intrata 
+
+B------------------------------->8.8 student ce trebuie bagat 8.5
+B------------------------------->8.5 student ce trebuie bagat 8.5
+ a intrata 
+
+B------------------------------->9.1 student ce trebuie bagat 8.4
+
+
+
+
+
+’ Mate1  Liam medie 9.4   Elijah medie 9.3   Bella medie 9.2   Jayden medie 9.1  Fizica  Fiona medie 8.8   Aiden medie 8.7   Carter medie 8.6   Isla medie 8.6  ALG  Grace medie 9.1   Mia medie 9.1   Jack medie 8.8  DS  Henry medie 8.5   Karen medie 8.5   Noah medie 8.5  Engleza  Harper medie 8.9   Gavin medie 8.4  Economie  Daisy medie 9.0   Kennedy medie 8.2  SE  Isabel medie 8.5   Larry medie 8.5 
+
+-Bob licenta: true, master: false  ____  9.2
+/Frank licenta: true, master: false  ____  8.7
+/Carol licenta: true, master: false  ____  8.5
+/Alice licenta: true, master: false  ____  8.0
+/David licenta: true, master: false  ____  8.0
+/Emily licenta: true, master: false  ____  8.0
+B------------------------------->8.7 student ce trebuie bagat 8.5
+B------------------------------->8.7 student ce trebuie bagat 8.0
+B------------------------------->8.7 student ce trebuie bagat 8.0
+B------------------------------->8.0 student ce trebuie bagat 8.0
+ a intrata 
+
+B------------------------------->8.7 student ce trebuie bagat 8.0
+B------------------------------->8.0 student ce trebuie bagat 8.0
+ a intrata 
+
+
+
+
+
+
+w POO  Bob medie 9.2   Frank medie 8.7  SO  Carol medie 8.5   Alice medie 8.0   David medie 8.0   Emily medie 8.0  Mate
+
+.Liam licenta: true, master: false  ____  9.4
+/Bella licenta: true, master: false  ____  9.2
+/Grace licenta: false, master: true  ____  9.1
+0Jayden licenta: true, master: false  ____  9.1
+-Mia licenta: false, master: true  ____  9.1
+/Daisy licenta: true, master: false  ____  9.0
+0Harper licenta: true, master: false  ____  8.9
+/Fiona licenta: true, master: false  ____  8.8
+.Jack licenta: false, master: true  ____  8.8
+.Isla licenta: true, master: false  ____  8.6
+0Isabel licenta: false, master: true  ____  8.5
+/Larry licenta: false, master: true  ____  8.5
+.Noah licenta: false, master: true  ____  8.5
+/Gavin licenta: true, master: false  ____  8.4
+1Kennedy licenta: true, master: false  ____  8.2
+0Elijah licenta: true, master: false  ____  7.3
+/Aiden licenta: true, master: false  ____  6.5
+/Henry licenta: false, master: true  ____  6.5
+0Carter licenta: true, master: false  ____  5.5
+/Karen licenta: false, master: true  ____  5.0
+.Liam licenta: true, master: false  ____  9.4
+0Elijah licenta: true, master: false  ____  9.3
+/Bella licenta: true, master: false  ____  9.2
+/Grace licenta: false, master: true  ____  9.1
+0Jayden licenta: true, master: false  ____  9.1
+-Mia licenta: false, master: true  ____  9.1
+/Daisy licenta: true, master: false  ____  9.0
+0Harper licenta: true, master: false  ____  8.9
+/Fiona licenta: true, master: false  ____  8.8
+.Jack licenta: false, master: true  ____  8.8
+/Aiden licenta: true, master: false  ____  8.7
+0Carter licenta: true, master: false  ____  8.6
+.Isla licenta: true, master: false  ____  8.6
+/Henry licenta: false, master: true  ____  8.5
+0Isabel licenta: false, master: true  ____  8.5
+/Karen licenta: false, master: true  ____  8.5
+/Larry licenta: false, master: true  ____  8.5
+.Noah licenta: false, master: true  ____  8.5
+/Gavin licenta: true, master: false  ____  8.4
+1Kennedy licenta: true, master: false  ____  8.2
+B------------------------------->9.1 student ce trebuie bagat 9.0
+B------------------------------->9.1 student ce trebuie bagat 8.7
+B------------------------------->8.6 student ce trebuie bagat 8.6
+ a intrata 
+
+B------------------------------->8.8 student ce trebuie bagat 8.5
+B------------------------------->8.5 student ce trebuie bagat 8.5
+ a intrata 
+
+B------------------------------->8.8 student ce trebuie bagat 8.5
+B------------------------------->9.1 student ce trebuie bagat 8.4
+
+
+
+
+
+’ Mate1  Liam medie 9.4   Elijah medie 9.3   Bella medie 9.2   Jayden medie 9.1  Fizica  Fiona medie 8.8   Aiden medie 8.7   Carter medie 8.6   Isla medie 8.6  ALG  Grace medie 9.1   Mia medie 9.1   Jack medie 8.8  DS  Henry medie 8.5   Karen medie 8.5   Noah medie 8.5  Engleza  Harper medie 8.9   Gavin medie 8.4  Economie  Daisy medie 9.0   Kennedy medie 8.2  SE  Isabel medie 8.5   Larry medie 8.5 
+
+-Bob licenta: true, master: false  ____  9.2
+/Alice licenta: true, master: false  ____  8.5
+/Carol licenta: true, master: false  ____  8.0
+B------------------------------->8.5 student ce trebuie bagat 8.0
+
+
+
+
+
+> AA  Bob medie 9.2   Alice medie 8.5  SO  Carol medie 8.0  RL
+
+1Daniel licenta: false, master: true  ____  10.0
+1Dragos licenta: false, master: true  ____  9.88
+0Alice licenta: false, master: true  ____  9.15
+/Mary licenta: false, master: true  ____  7.73
+0Russel licenta: false, master: true  ____  7.5
+/John licenta: false, master: true  ____  6.99
+1Daniel licenta: false, master: true  ____  10.0
+1Dragos licenta: false, master: true  ____  9.88
+0Alice licenta: false, master: true  ____  9.15
+/Mary licenta: false, master: true  ____  7.73
+0Russel licenta: false, master: true  ____  7.5
+/John licenta: false, master: true  ____  6.99
+1Daniel licenta: false, master: true  ____  10.0
+/Alice licenta: false, master: true  ____  9.9
+1Dragos licenta: false, master: true  ____  9.88
+/Mary licenta: false, master: true  ____  7.73
+0Russel licenta: false, master: true  ____  7.5
+/John licenta: false, master: true  ____  7.12
+1Daniel licenta: false, master: true  ____  10.0
+1Dragos licenta: false, master: true  ____  9.88
+0Alice licenta: false, master: true  ____  9.15
+/Mary licenta: false, master: true  ____  7.73
+0Russel licenta: false, master: true  ____  7.5
+/John licenta: false, master: true  ____  6.99
+1Daniel licenta: false, master: true  ____  10.0
+1Dragos licenta: false, master: true  ____  9.88
+/Alice licenta: false, master: true  ____  9.5
+/Mary licenta: false, master: true  ____  7.73
+0Russel licenta: false, master: true  ____  7.5
+/John licenta: false, master: true  ____  7.12
+1Daniel licenta: false, master: true  ____  10.0
+/Alice licenta: false, master: true  ____  9.9
+1Dragos licenta: false, master: true  ____  9.88
+0Russel licenta: false, master: true  ____  7.8
+/Mary licenta: false, master: true  ____  7.73
+/John licenta: false, master: true  ____  7.12
+	1Daniel licenta: false, master: true  ____  10.0
+	1Dragos licenta: false, master: true  ____  9.88
+	0Alice licenta: false, master: true  ____  9.15
+	/Mary licenta: false, master: true  ____  7.73
+	0Russel licenta: false, master: true  ____  7.5
+	/John licenta: false, master: true  ____  6.99
+	0Alice licenta: false, master: true  ____  10.0
+	1Daniel licenta: false, master: true  ____  10.0
+	1Dragos licenta: false, master: true  ____  9.88
+	/John licenta: false, master: true  ____  9.88
+	/Mary licenta: false, master: true  ____  7.73
+	0Russel licenta: false, master: true  ____  7.5
+
+.Isla licenta: false, master: true  ____  9.5
+
+0Harper licenta: false, master: true  ____  8.8
+
+/Bella licenta: true, master: false  ____  8.0
+
+0Carter licenta: true, master: false  ____  7.5
+
+/Daisy licenta: true, master: false  ____  7.0
+
+.Ella licenta: true, master: false  ____  5.5
+
+/Fiona licenta: false, master: true  ____  5.0
+
+/Gavin licenta: false, master: true  ____  5.0
+
+0Jayden licenta: false, master: true  ____  2.6
+
+/Aiden licenta: true, master: false  ____  2.5
+
+0Fiona licenta: false, master: true  ____  10.0
+
+/Aiden licenta: true, master: false  ____  9.5
+
+.Isla licenta: false, master: true  ____  9.5
+
+0Harper licenta: false, master: true  ____  8.8
+
+/Bella licenta: true, master: false  ____  8.0
+
+0Carter licenta: true, master: false  ____  7.5
+
+/Daisy licenta: true, master: false  ____  7.0
+
+0Jayden licenta: false, master: true  ____  5.6
+
+.Ella licenta: true, master: false  ____  5.5
+
+/Gavin licenta: false, master: true  ____  5.0
+
+B------------------------------->8.0 student ce trebuie bagat 7.5
+
+B------------------------------->8.0 student ce trebuie bagat 7.0
+
+B------------------------------->8.0 student ce trebuie bagat 5.5
+
+B------------------------------->5.6 student ce trebuie bagat 5.0
+
+
+
+
+
+
+
+
+
+
+
+× Mate1  Aiden medie 9.5   Bella medie 8.0  AI  Isla medie 9.5   Harper medie 8.8   Gavin medie 5.0  Mate2  Carter medie 7.5   Daisy medie 7.0  Mate3  Ella medie 5.5  Management  Fiona medie 10.0   Jayden medie 5.6 
+
+
+0Fiona licenta: false, master: true  ____  10.0
+/Aiden licenta: true, master: false  ____  9.5
+.Isla licenta: false, master: true  ____  9.5
+0Harper licenta: false, master: true  ____  8.8
+/Bella licenta: true, master: false  ____  8.0
+0Carter licenta: true, master: false  ____  7.5
+/Daisy licenta: true, master: false  ____  7.0
+0Jayden licenta: false, master: true  ____  5.6
+.Ella licenta: true, master: false  ____  5.5
+/Gavin licenta: false, master: true  ____  5.0
+B------------------------------->8.0 student ce trebuie bagat 7.5
+B------------------------------->8.0 student ce trebuie bagat 7.0
+B------------------------------->8.0 student ce trebuie bagat 5.5
+B------------------------------->5.6 student ce trebuie bagat 5.0
+
+
+
+
+
+× Mate1  Aiden medie 9.5   Bella medie 8.0  AI  Isla medie 9.5   Harper medie 8.8   Gavin medie 5.0  Mate2  Carter medie 7.5   Daisy medie 7.0  Mate3  Ella medie 5.5  Management  Fiona medie 10.0   Jayden medie 5.6 
+
+.Liam licenta: true, master: false  ____  9.4
+0Elijah licenta: true, master: false  ____  9.3
+/Bella licenta: true, master: false  ____  9.2
+/Grace licenta: false, master: true  ____  9.1
+0Jayden licenta: true, master: false  ____  9.1
+-Mia licenta: false, master: true  ____  9.1
+/Daisy licenta: true, master: false  ____  9.0
+0Harper licenta: true, master: false  ____  8.9
+/Fiona licenta: true, master: false  ____  8.8
+.Jack licenta: false, master: true  ____  8.8
+/Aiden licenta: true, master: false  ____  8.7
+0Carter licenta: true, master: false  ____  8.6
+.Isla licenta: true, master: false  ____  8.6
+/Henry licenta: false, master: true  ____  8.5
+0Isabel licenta: false, master: true  ____  8.5
+/Karen licenta: false, master: true  ____  8.5
+/Larry licenta: false, master: true  ____  8.5
+.Noah licenta: false, master: true  ____  8.5
+/Gavin licenta: true, master: false  ____  8.4
+1Kennedy licenta: true, master: false  ____  8.2
+B------------------------------->9.1 student ce trebuie bagat 9.0
+B------------------------------->9.1 student ce trebuie bagat 8.7
+B------------------------------->8.6 student ce trebuie bagat 8.6
+ a intrata 
+
+B------------------------------->8.8 student ce trebuie bagat 8.5
+B------------------------------->8.8 student ce trebuie bagat 8.5
+B------------------------------->8.5 student ce trebuie bagat 8.5
+ a intrata 
+
+B------------------------------->9.1 student ce trebuie bagat 8.4
+
+
+
+
+
+’ Mate1  Liam medie 9.4   Elijah medie 9.3   Bella medie 9.2   Jayden medie 9.1  Fizica  Fiona medie 8.8   Aiden medie 8.7   Carter medie 8.6   Isla medie 8.6  ALG  Grace medie 9.1   Mia medie 9.1   Jack medie 8.8  DS  Henry medie 8.5   Karen medie 8.5   Noah medie 8.5  Engleza  Harper medie 8.9   Gavin medie 8.4  Economie  Daisy medie 9.0   Kennedy medie 8.2  SE  Isabel medie 8.5   Larry medie 8.5 
+
+1Daniel licenta: false, master: true  ____  10.0
+0Dorin licenta: false, master: true  ____  9.88
+0Alina licenta: false, master: true  ____  9.15
+/Mara licenta: false, master: true  ____  7.73
+0Razvan licenta: false, master: true  ____  7.5
+.Ion licenta: false, master: true  ____  6.99

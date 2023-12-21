@@ -1,8 +1,11 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Student {
     private String Nume;
     private double medie;
+    private ArrayList<Curs> preferinte = new ArrayList<>();
 
     public Student(String nume) {
         this.Nume = nume;
@@ -27,6 +30,14 @@ public class Student {
 
     public double getMedie() {
         return medie;
+    }
+
+    public ArrayList<Curs> getPreferinte() {
+        return preferinte;
+    }
+
+    public <E extends Student> void adaugaPreferintaCurs(Curs<E> curs) {
+        preferinte.add(curs);
     }
 
 }

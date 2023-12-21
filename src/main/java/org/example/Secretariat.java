@@ -5,8 +5,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class Secretariat {
 
@@ -38,15 +36,140 @@ public class Secretariat {
         return false;
     }
 
-    /// de sters
-//    public void afiseazaStudent() {
-//        for (Student student : studentiFacultate) {
-//            boolean tip = student instanceof StudentLicenta;
-//            boolean tip2 = student instanceof StudentMaster;
-//            System.out.println(student.getNume() + " licenta: " + tip + ", master: " + tip2 + "  ____  " + student.getMedie());
-//        }
-//    }
+    public <E extends Student> void adaugaCurs(String nume, int capacitate, Class<E> tipCurs) {
+        Curs<E> curs = new Curs<>(nume, capacitate);
+        cursuriOptionale.add(curs);
+    }
 
+    public String[] extragereCursuri (String[] date) {
+        int index = 2;
+        String[] datenew = new String[date.length - 2];
+        while (index >= 2 && index < date.length) {
+            datenew[index-2] = date[index];
+            index++;
+        }
+        return datenew;
+    }
+
+    //se adauga preferintele de curs optional in listele studentilor
+    public  void adaugaPreferinte(String[] date) {
+        //preferintele studentului
+        String[] cursuri = extragereCursuri(date);
+        for (Student studenti : studentiFacultate) {
+            // daca s-a gasit studentul in baza de date
+            if (studenti.getNume().equals(date[1])) {
+                // pentru fiecare curs din preferinte se cauta in lista cu cursuri si adauga la preferintele studentului
+                for (String numeCurs : cursuri) {
+                    for (Curs<?> curs : cursuriOptionale) {
+                        if (curs.getNumeCurs().equals(numeCurs)) {
+                            studenti.adaugaPreferintaCurs(curs);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    public void repartizeaza() {
+        //sortam descrescator dupa medie
+        sortareDescrescatoare();
+        for(Student student : studentiFacultate) {
+            ArrayList<Curs> cursuriStudent  = student.getPreferinte();
+            for(Curs cursuristud : cursuriStudent) {
+                if(cursuristud.getCapacitateMaxima() > cursuristud.getStudentiParticipanti().size()) {
+                    cursuristud.adaugaStudent(student, 1);
+                    break;
+                } else {
+                    int index = cursuristud.getStudentiParticipanti().size();
+                    Student lastStudent = (Student) cursuristud.getStudentiParticipanti().get(index - 1);
+                    System.out.println("------------------------------->" + lastStudent.getMedie() + " student ce trebuie bagat " + student.getMedie());
+                    if(student.getMedie() == lastStudent.getMedie()) {
+                        System.out.println(" a intrata \n");
+                        cursuristud.adaugaStudent(student, 0);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    public void posteazaCurs(String cursNume, String args) {
+        int first = 0;
+        for(Curs curs : cursuriOptionale) {
+            if(curs.getNumeCurs().equals(cursNume)) {
+
+                try (FileWriter fw = new FileWriter("src/main/resources/" + args + "/" + args + ".out", true);
+                     BufferedWriter bw = new BufferedWriter(fw);
+                     PrintWriter out = new PrintWriter(bw)) {
+                    if (first == 0) {
+                        out.println("***");
+                        first++;
+                    }
+                    out.print(curs.getNumeCurs() + " (" + curs.getCapacitateMaxima() + ")\n");
+                    curs.sortareAlfabetica();
+                    ArrayList<Student> date = curs.getStudentiParticipanti();
+                    for (Student stud : date) {
+                        out.println(stud.getNume() + " - " + stud.getMedie());
+                    }
+                }catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void posteazaStudent(String studentNume, String args) {
+        int first = 0;
+        for(Student student : studentiFacultate) {
+            if(student.getNume().equals(studentNume)) {
+
+                try (FileWriter fw = new FileWriter("src/main/resources/" + args + "/" + args + ".out", true);
+                     BufferedWriter bw = new BufferedWriter(fw);
+                     PrintWriter out = new PrintWriter(bw)) {
+                    if (first == 0) {
+                        out.println("***");
+                        first++;
+                    }
+
+                    String tipstudent = null;
+                    String numeoptional;
+                    if(student instanceof StudentLicenta) {
+                        tipstudent = "Licenta";
+                    } else if(student instanceof StudentMaster) {
+                        tipstudent = "Master";
+                    }
+
+                    out.print("Student " + tipstudent + ": " + student.getNume() + " - " + student.getMedie() + " - ");
+
+                    for (Curs curs : cursuriOptionale) {
+                        ArrayList<Student> students = curs.getStudentiParticipanti();
+                        for(Student stud : students) {
+                            if(stud.getNume().equals(studentNume)) {
+                                out.println(curs.getNumeCurs());
+                            }
+                        }
+                    }
+                }catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    public void sortareDescrescatoare() {
+        Student intermediar;
+        for (int i = 0; i < studentiFacultate.size(); i++) {
+            for (int j = i + 1; j < studentiFacultate.size(); j++) {
+                // comparam mediile si facem rocada intre studenti
+                if (studentiFacultate.get(i).getMedie() < studentiFacultate.get(j).getMedie()) {
+                    intermediar = studentiFacultate.get(j);
+                    studentiFacultate.set(j, studentiFacultate.get(i));
+                    studentiFacultate.set(i, intermediar);
+                }
+            }
+        }
+    }
 
     public void sortareAfisare(){
         Student intermediar;
@@ -69,15 +192,15 @@ public class Secretariat {
 
         }
     }
+
     public void afiseazaMedii(String args) {
-//        Collections.sort(studentiFacultate, Comparator.comparing(Student::getMedie).reversed().thenComparing(Student::getNume));
-        //sortare
+//      //sortare
         sortareAfisare();
         int first = 0;
         for (Student student : studentiFacultate) {
-//            boolean tip = student instanceof StudentLicenta;
-//            boolean tip2 = student instanceof StudentMaster;
-//            System.out.println(student.getNume() + " licenta: " + tip + ", master: " + tip2 + "  ____  " + student.getMedie());
+            boolean tip = student instanceof StudentLicenta;
+            boolean tip2 = student instanceof StudentMaster;
+            System.out.println(student.getNume() + " licenta: " + tip + ", master: " + tip2 + "  ____  " + student.getMedie());
             try (FileWriter fw = new FileWriter("src/main/resources/" + args + "/" + args + ".out", true);
                  BufferedWriter bw = new BufferedWriter(fw);
                  PrintWriter out = new PrintWriter(bw)) {
@@ -99,6 +222,14 @@ public class Secretariat {
                 double medie = Double.parseDouble(date[1]);
                 student.setMedie(medie);
                 return;
+            }
+        }
+    }
+
+    public void contestatii(String[] date) {
+        for (Student student : studentiFacultate) {
+            if(student.getNume().equals(date[1])) {
+                student.setMedie(Double.parseDouble(date[2]));
             }
         }
     }
