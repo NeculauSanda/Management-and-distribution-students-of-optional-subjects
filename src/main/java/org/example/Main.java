@@ -12,6 +12,7 @@ public class Main {
             String line;
             String splitBy = " - ";
             while ((line = br.readLine()) != null) {
+
                 String[] intrari = line.split(splitBy);
                 // adugam studentii
                 if (intrari[0].equals("adauga_student")) {
@@ -26,7 +27,7 @@ public class Main {
                             out.println("***");
                             out.println(e.getMessage());
                         }catch (IOException b) {
-                            b.printStackTrace();
+                            b.getMessage();
                         }
                     }
 
@@ -41,7 +42,8 @@ public class Main {
                                 secretariat.citesteMedii(medii);
                             }
                         } catch (IOException e) {
-                            break; //nu vreau sa apara mesajul
+                            e.getMessage();
+                            break;
                         }
                         nr++;
                     }
@@ -67,7 +69,7 @@ public class Main {
                 }
             }
         } catch(IOException e){
-            e.printStackTrace();
+            e.getMessage();
         }
     }
 }

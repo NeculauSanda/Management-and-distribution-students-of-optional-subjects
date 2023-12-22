@@ -3,9 +3,9 @@ package org.example;
 import java.util.ArrayList;
 
 public class Student {
-    private String Nume;
+    private final String Nume;
     private double medie;
-    private ArrayList<Curs> preferinte = new ArrayList<>();
+    private final ArrayList<Curs> preferinte = new ArrayList<>();
 
     public Student(String nume) {
         this.Nume = nume;
@@ -14,10 +14,6 @@ public class Student {
     public Student(String nume, double medie) {
         this.Nume = nume;
         this.medie = medie;
-    }
-
-    public void setNume(String nume) {
-        Nume = nume;
     }
 
     public void setMedie(double medie) {

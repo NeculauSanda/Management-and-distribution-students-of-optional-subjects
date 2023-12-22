@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 
-public class Curs<E extends Student> {
+public class Curs <E extends Student> {
     private final String numeCurs;
     private final int capacitateMaxima;
 

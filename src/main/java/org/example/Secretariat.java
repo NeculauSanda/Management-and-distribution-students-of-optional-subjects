@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 public class Secretariat {
 
-    private ArrayList<Student> studentiFacultate = new ArrayList<>();
-    private ArrayList<Curs> cursuriOptionale = new ArrayList<>();
+    private final ArrayList<Student> studentiFacultate = new ArrayList<>();
+    private final ArrayList<Curs<?>> cursuriOptionale = new ArrayList<>();
 
     public void adaugaStudent (String tipStudiu, String numeStudent) {
         Student student = null;
@@ -113,7 +113,7 @@ public class Secretariat {
                         out.println(stud.getNume() + " - " + stud.getMedie());
                     }
                 }catch (IOException e) {
-                    e.printStackTrace();
+                    e.getMessage();
                 }
             }
         }
@@ -150,7 +150,7 @@ public class Secretariat {
                         }
                     }
                 }catch (IOException e) {
-                    e.printStackTrace();
+                    e.getMessage();
                 }
             }
         }
@@ -209,7 +209,7 @@ public class Secretariat {
                 }
                 out.println(student.getNume() + " - " + student.getMedie());
             } catch (IOException e) {
-                e.printStackTrace();
+                e.getMessage();
             }
         }
     }
@@ -219,7 +219,6 @@ public class Secretariat {
             if(student.getNume().equals(date[0])) {
                 double medie = Double.parseDouble(date[1]);
                 student.setMedie(medie);
-                return;
             }
         }
     }
